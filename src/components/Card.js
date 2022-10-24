@@ -4,7 +4,7 @@ const Card = (props) => {
   let badgeText
   if (props.item.openSpots === 0) {
       badgeText = "SOLD OUT"
-  } else if (props.location === "Online") {
+  } else if (props.item.location === "Online") {
       badgeText = "ONLINE"
   }
 
