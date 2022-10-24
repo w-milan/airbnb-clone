@@ -5,7 +5,7 @@ import './App.css';
 import data from "./data"
 
 function App() {
-  const items = data.map((item) => {
+  const cards = data.map((item) => {
     return <Card 
                 img={item.coverImg} 
                 rating={item.stats.rating}
@@ -22,7 +22,9 @@ function App() {
     <div className="container">
       <Navbar />
       <Hero />
-      {items}
+      <section className="cards-list">
+        {cards}
+      </section>
     </div>
   );
 }
