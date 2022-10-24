@@ -3,6 +3,7 @@ import React from 'react'
 const Card = (props) => {
   return (
     <div className='card'>
+      <div className="card-badge">SOLD OUT</div>
       <img src={require(`../images/${props.img}`)} className="card-image" alt='' />
       <div className="card-stats">
           <img src={require('../images/star.png')} className="card-star" alt=''/>
